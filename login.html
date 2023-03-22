@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    .box {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .box span {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      background-color: white;
+      background-image: url(./img/Main_Woman.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+
+      -webkit-transition: transform .3s ease-out;
+      -moz-transition: transform .3s ease-out;
+      -ms-transition: transform .3s ease-out;
+      -o-transition: transform .3s ease-out;
+      transition: transform .3s ease-out;
+    }
+
+    .box:hover span {
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      /* IE 9 */
+      -o-transform: scale(1.5);
+      transform: scale(1.5);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')";
+      /* IE8 */
+      filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand');
+      /* IE6 and 7 */
+    }
+
+    .img {
+      position: relative;
+      left: 500px;
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+      /* background-color: red; */
+      overflow: hidden;
+      /* border: 1px solid red; */
+    }
+
+    .img h2 {
+      width: 100%;
+      height: 100%;
+      background-image: url(./img/Main_Man.jpg);
+      background-position: center ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all 0.5s ease-in;
+      transition: all 0.6s v;
+    }
+
+    .img h2:hover {
+      transform: scale(1.4);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <span></span>
+  </div>
+  <div class="img">
+    <h2></h2>
+  </div>
+</body>
+
+</html>
